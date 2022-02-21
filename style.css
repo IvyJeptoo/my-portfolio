@@ -129,4 +129,10 @@
     width: 300px;
     margin: 10px;
     text-align: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, white);
+    background-size: 100% 200%;
+    transition: all .8s;
 }
