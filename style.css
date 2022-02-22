@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 /* navbar section*/
 .navbar {
@@ -77,26 +77,24 @@ html{
   padding: 20px;
 }
 
-
-
 /* About me section */
 #about {
   display: flex;
   background-color: rgba(0, 0, 0, 0.2);
-  
 
   flex-direction: column;
 }
 #pic {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
+
   align-items: center;
   text-align: center;
 }
 #pic img {
   width: 200px;
   height: 200px;
+
   border-radius: 50%;
 }
 #intro p {
@@ -124,7 +122,7 @@ html{
   width: 300px;
   margin: 20px;
   text-align: center;
-  /* text-align: justify; */
+
   padding: 10px;
   border-radius: 20px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, white);
@@ -151,71 +149,112 @@ html{
   margin-left: 70px;
   margin-top: 10px;
 }
- 
+
 /* contact me section*/
-#contact{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px;
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0px;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
 }
-.input{
-    padding: 10px;
-    margin: 20px;
-    width: 40%;
-    border: none;
-    outline: none;
+.input {
+  padding: 10px;
+  margin: 20px;
+  width: 40%;
+  border: none;
+  outline: none;
 }
-#msg{
-    width: 40%;
-    padding: 10px;
-    margin: 20px;
-    border: none;
-    outline: none;
+#msg {
+  width: 40%;
+  padding: 10px;
+  margin: 20px;
+  border: none;
+  outline: none;
 }
-#send{
-    padding: 10px;
-    width: 20%;
-    border: none;
-    outline: none;
-
+#send {
+  padding: 10px;
+  width: 20%;
+  border: none;
+  outline: none;
 }
-#send:hover{
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-
+#send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
-.footer{
-    width: 40px;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-
+.footer {
+  width: 40px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
 }
-.footer:hover{
-    background-color: white;
+.footer:hover {
+  background-color: white;
   color: black;
   box-shadow: 0 0 10px white;
-
 }
 
- /* responsiveness */
+/* responsiveness */
 
-/* @media only screen and (max-width: 600px) and (min-width: 325px){
-    .navbar ul li {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 0.6rem;
-  font-weight: bold;
-  justify-content: space-between;
-  
-
-    }
-    
-} */
+@media screen and (max-width: 480px) {
+  .navbar ul li {
+    font-size: 0.6rem;
+  }
+  .navbar ul li a {
+    padding: 10px;
+    color: black;
+  }
+  .heading {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .headings {
+    font-size: 1rem;
+  }
+  .main h3 {
+    font-size: 0.8rem;
+  }
+  #pic img {
+    width: 100px;
+    height: 100px;
+  }
+  #intro p {
+    font-size: 0.8rem;
+  }
+  .project p {
+    font-size: 0.8rem;
+  }
+  .icons {
+    width: 6em;
+    height: 5em;
+    margin-right: 30px;
+    padding: 10px;
+  }
+  .project {
+    height: 350px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, white);
+    background-size: 80% 160%;
+    transition: all 0.7s;
+    font-weight: 500;
+  }
+  .input {
+    width: 85%;
+  }
+  #msg {
+    width: 85%;
+  }
+  #send {
+    width: 40%;
+  }
+  .navbar ul li a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+}
